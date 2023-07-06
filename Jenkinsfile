@@ -16,6 +16,7 @@ pipeline {
                 echo("Stage untuk Deploy")
                 echo "${BUILD_NUMBER}"
                 echo "${JOB_NAME}"
+                echo "${NODE_NAME}"
             }
         }
     }
