@@ -14,6 +14,7 @@ pipeline {
         stage('Delploy'){
             steps {
                 echo("Stage untuk Deploy")
+                echo ${BUILD_NUMBER}
             }
         }
     }
