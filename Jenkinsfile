@@ -1,3 +1,4 @@
+def status_job = "SUCCESS"
 pipeline {
     agent any
     stages {
@@ -19,5 +20,12 @@ pipeline {
                 echo "${NODE_NAME}"
             }
         }
+        stage('Email notification'){
+            steps {
+                echo "${status_job}"
+            }
+
+        }
+        
     }
 }
