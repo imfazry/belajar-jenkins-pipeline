@@ -22,7 +22,9 @@ pipeline {
         }
         stage('Email notification'){
             steps {
+                echo "Email notification"
                 echo "${status_job}"
+                
             }
 
         }
