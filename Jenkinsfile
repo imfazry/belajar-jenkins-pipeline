@@ -34,7 +34,7 @@ pipeline {
                 script {
                     currentBuild.result = 'FAILURE'
                     emailext (
-                        to: 'muhamad.fazry93@gmail.com',
+                        to: 'muhamadfazry.0493@gmail.com',
                         subject: "Pipeline Failed: ${currentBuild.fullDisplayName}",
                         body: "The pipeline ${currentBuild.fullDisplayName} has failed.\n\nBuild URL: ${env.BUILD_URL}"
                         )
@@ -44,7 +44,7 @@ pipeline {
                 script {
                     currentBuild.result = 'SUCCESS'
                     emailext (
-                        to: 'muhamad.fazry93@gmail.com',
+                        to: 'muhamadfazry.0493@gmail.com',
                     subject: "Pipeline Succeeded: ${currentBuild.fullDisplayName}",
                     body: "The pipeline ${currentBuild.fullDisplayName} has succeeded.\n\nBuild URL: ${env.BUILD_URL}"
                 )
