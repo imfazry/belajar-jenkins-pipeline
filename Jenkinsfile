@@ -47,8 +47,8 @@ pipeline {
                     subject: "Pipeline Succeeded: ${currentBuild.fullDisplayName}",
                     body: "The pipeline ${currentBuild.fullDisplayName} has succeeded.\n\nBuild URL: ${env.BUILD_URL}"
                 )
+                }
             }
         }
-        
     }
 }
