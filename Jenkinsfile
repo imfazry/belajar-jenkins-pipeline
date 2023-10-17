@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        def DEV_DB_PASSWORD = credentials('Git-fazry')
+        def DEV_DB_PASSWORD = abdnsadsasda
         // def CICD_YML_REPO = "https://github.com/imfazry/belajar-jenkins-pipeline.git"
         // def GIT_CRED = "Git-fazry"
         // // def SONAR_URL = "https://sonarqube.danamon.co.id/"
@@ -18,7 +18,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo("Stage untuk Build")
-                echo( DEV_DB_PASSWORD )
+                echo( ${DEV_DB_PASSWORD} )
                 script {
 
                       sh 'env > env.txt'
