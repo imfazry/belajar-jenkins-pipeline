@@ -1,4 +1,3 @@
-def status_job = "SUCCESS"
 pipeline {
     agent any
 
@@ -11,6 +10,7 @@ pipeline {
         // def ENV_ID = getEnvironmentID(env.GIT_BRANCH)
         def PROJECT_NAME = getProject(env.GIT_URL)
         // def NEXUS_UAT_REGISTRY = "nexus-uat.danamon.co.id:8083"
+        def status_job = "SUCCESS"
     }
 
     stages {
