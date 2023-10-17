@@ -18,7 +18,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo("Stage untuk Build")
-                echo( ${DEV_DB_PASSWORD} )
+                echo ${DEV_DB_PASSWORD}
                 script {
 
                       sh 'env > env.txt'
