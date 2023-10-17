@@ -1,14 +1,14 @@
 def status_job = "SUCCESS"
 pipeline {
     agent any
-    
+
     environment {
         def CICD_YML_REPO = "https://github.com/imfazry/belajar-jenkins-pipeline.git"
         def GIT_CRED = "Git-fazry"
         // def SONAR_URL = "https://sonarqube.danamon.co.id/"
         // def SONAR_LOGIN = "12c1a5ad214cdd46644f1a3f3f837a7251bd2c40"
         // def SONATYPE_CRED = 'Sonatype'
-        def ENV_ID = getEnvironmentID(env.GIT_BRANCH)
+        // def ENV_ID = getEnvironmentID(env.GIT_BRANCH)
         def PROJECT_NAME = getProject(env.GIT_URL)
         // def NEXUS_UAT_REGISTRY = "nexus-uat.danamon.co.id:8083"
     }
