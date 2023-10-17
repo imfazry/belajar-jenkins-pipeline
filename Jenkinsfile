@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        def DEV_DB_PASSWORD = abdnsadsasda
+        def DEV_DB_PASSWORD = "abdnsadsasda"
         // def CICD_YML_REPO = "https://github.com/imfazry/belajar-jenkins-pipeline.git"
         // def GIT_CRED = "Git-fazry"
         // // def SONAR_URL = "https://sonarqube.danamon.co.id/"
