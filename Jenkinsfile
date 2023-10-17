@@ -2,7 +2,6 @@ def CICD_YML_REPO = "https://github.com/imfazry/belajar-jenkins-pipeline.git"
 def GIT_CRED = "Git-fazry"
 def PROJECT_NAME = getProject(env.GIT_URL)
 def status_job = "SUCCESS"
-
 pipeline {
     agent any
 
