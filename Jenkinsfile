@@ -19,10 +19,10 @@ pipeline {
             steps {
                 echo("Stage untuk Build")
                 script {
-                    pom = readMavenPom file: "${BUILD_DIR}/pom.xml"
-                    ARTIFACTID = pom.artifactId
-                    VERSION = pom.version
-                    GROUPID = pom.groupId
+                    // pom = readMavenPom file: "${BUILD_DIR}/pom.xml"
+                    // ARTIFACTID = pom.artifactId
+                    VERSION = latest
+                    // GROUPID = pom.groupId
                     currentBuild.displayName  = "#${BUILD_NUMBER}, ${VERSION}"
                 }
                 // echo "${DEV_DB_PASSWORD}"
