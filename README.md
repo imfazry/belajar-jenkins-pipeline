@@ -6,4 +6,4 @@ by Programmer Zaman Now 4
 # belajar-jenkins-pipeline
 
 
-test1
+test2

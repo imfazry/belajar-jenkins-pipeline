@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    // environment {
+    environment {
     //     def DEV_DB_PASSWORD = "abdnsadsasda"
     //     def CICD_YML_REPO = "https://github.com/imfazry/belajar-jenkins-pipeline.git"
     //     def GIT_CRED = "Git-fazry"
@@ -12,7 +12,7 @@ pipeline {
     //     def PROJECT_NAME = getProject(env.GIT_URL)
     //     // def NEXUS_UAT_REGISTRY = "nexus-uat.danamon.co.id:8083"
     //     def status_job = "SUCCESS"
-    // }
+     }
 
     stages {
         stage('Build') {

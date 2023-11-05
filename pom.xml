@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>programmer-zaman-now</groupId>
 	<artifactId>belajar-spring-dasar</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>belajar-spring-dasar</name>
 	<description>Belajar Spring Dasar</description>
 	<properties>
